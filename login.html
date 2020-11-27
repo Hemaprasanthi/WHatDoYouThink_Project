@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> What do you think </title>
+<h1> What do you think?</h1>
+<h3> Welcome Page</h3>
+<body>
+<table>
+</tr>
+<tr>
+  <td>
+  <label>Email:</label>
+  </td>
+  <td>
+  <input type=email id="email" name="email"></input>
+  </td>
+  </tr>
+<tr>
+<td>
+<label>Password:</label>
+</td>
+<td>
+<input type=text id="password" name="password"> </input>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<button>Signup</button>
+<button onclick="displayResult()">Signin</button>
+</td>
+</tr>
+</table>
+<p id="demo"></p>
+
+<script>
+function displayResult() {
+ 
+  var user = document.getElementById('username').value;
+var pass = document.getElementById('password').value;
+console.log("username"+user);
+if(user==pass)
+document.getElementById("demo").innerHTML = "Testcase passed wih username: "+user;
+else
+document.getElementById("demo").innerHTML = "Testcase not passed with username: "+user;
+}
+</script>
+</body>
+</html>
