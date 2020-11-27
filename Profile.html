@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          border: solid;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
+    </head>
+    <div class="topnav">
+        <a href="SignIn.html"><img src="images/homebutton.jpg" width="50" height="50"></a>
+        <a href="#My Paintings">My Paintings</a>
+        <a href="#My Comments">My Comments</a>
+        <div class="dropdown" style="right:0">
+            <img src="images/dropdown_symbol.png" width="50" height="50">
+            <div class="dropdown-content">
+            <a href="SignIn.html"><img src="images/default_profile.png" width="50" height="50">View Profile</a>
+            <div class="dropdown-content">
+                <a href="SignIn.html"><img src="images/logout.jpg" width="50" height="50">Logout</a>
+          </div>
+      </div>
+    </div>
+    <br>
+    <img src ="images/user1.jpg" width="100" height="100"/>
+    <br>
+    <label>Name: Emily</label><br>
+    <label> Email: EmilyinParis@gmail.com</label>
+    <br>
+    <a href="Upload.html"><img src="images/add.jpg" width="50" height="50"></a>
+</html>
